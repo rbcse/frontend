@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/coursedetail.css'
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = import.meta.env.REACT_APP_BASE_URL;
 
@@ -14,6 +15,7 @@ function CourseDetails() {
     const [num_items, setNumItems] = useState(0);
     const [review, setReview] = useState("");
     const [num_reviews, setNumReviews] = useState(0);
+    const navigate = useNavigate();
 
     const getCourseDetails = async () => {
         const response = await axios.post(`${BASE_URL}/getcoursedetails`, {
