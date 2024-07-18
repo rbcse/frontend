@@ -1,0 +1,9 @@
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:2rem;
+}

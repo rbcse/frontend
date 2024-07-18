@@ -1,0 +1,77 @@
+.quiz-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quiz-section .image-section{
+    width:50%;
+}
+
+.quiz-section .image-section img{
+    width:100%;
+    height:100vh;
+}
+
+.quiz-section .form-section , .quiz-section .form-section form{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.quiz-section .form-section form{
+    width:100%;
+}
+
+.quiz-section .form-section form h1{
+    font-weight:900;
+    font-size:3rem;
+}
+
+.quiz-section .form-section form input , .quiz-section .form-section form button , .quiz-section .form-section form a{
+    width:63%;
+    padding:1.2rem;
+    font-size:1.2rem;
+    outline:none;
+}
+
+.quiz-section .form-section form button{
+    background-color: #5352ed;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.quiz-section .form-section form a{
+    text-decoration: none;
+    color:black;
+}
+
+@media (max-width:450px) {
+    .quiz-section{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .quiz-section .image-section , .quiz-section  .form-section {
+        width:100%;
+    }
+    .quiz-section .image-section img{
+        height:40vh;
+    }
+    .quiz-section .form-section form h1{
+        font-size:1.8rem;
+        width:100%;
+        text-align: center;
+    }
+    .quiz-section .form-section form input , .quiz-section .form-section form button{
+        border:2px solid rgb(210, 208, 208);
+        width:80%;
+    }
+}

@@ -1,0 +1,89 @@
+.navbar-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding:1.4rem;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: white;
+}
+
+.navbar-section .logo-section a{
+    font-size:1.6rem;
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+}
+
+.navbar-section .logo-section a span{
+    color:#5352ed;
+}
+
+.navbar-section .nav-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.navbar-section .nav-icons.visible{
+    display:none;
+}
+
+.navbar-section .nav-icons a{
+    text-decoration: none;
+    color:black;
+    font-size:1.15rem;
+    font-weight:700;
+}
+
+.navbar-section .nav-icons a:hover{
+    color:#5352ed;
+}
+
+.menu-icon.visible , .close-icon.visible{
+    display:none;
+    width:12%;
+}
+.menu-icon.hide , .close-icon.hide{
+    display:none;
+    width:12%;
+}
+
+.menu-icon img , .close-icon img{
+    width:100%;
+    font-weight: 900;
+}
+
+
+@media (max-width:450px){
+    .navbar-section.change{
+        flex-direction: column;
+        height:55vh;
+    }
+    .navbar-section .nav-icons.hide{
+        display: none;
+    }
+    .navbar-section .nav-icons.visible{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        gap:2rem;
+        position: fixed;
+        top:7rem;
+    }
+    .menu-icon.visible , .close-icon.visible{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        position: fixed;
+        top:2.2rem;
+        right:1rem;
+        height:10px;
+        width:10%;
+    }
+}

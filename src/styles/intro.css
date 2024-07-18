@@ -1,0 +1,47 @@
+.intro-section{
+    margin-top:6rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:1rem 2rem 0 1rem;
+}
+
+.intro-section .logo-section{
+    width:40%;
+    text-align: center;
+}
+
+.intro-section .logo-section h1{
+    font-weight:800;
+}
+
+.intro-section .text-section{
+    width:50%;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.intro-section .text-section h2{
+    font-weight:800;
+    font-size:1.7rem;
+}
+
+.intro-section .text-section p{
+    color:#5352ed;
+}
+
+@media (max-width:450px){
+    .intro-section{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .intro-section .text-section , .intro-section .logo-section{
+        width:100%;
+        text-align: left;
+    }
+}

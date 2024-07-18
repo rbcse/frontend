@@ -1,0 +1,186 @@
+.blog-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    gap:2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog-section .blog-nav-section{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding:1rem;
+    position: fixed;
+    top:0;
+    background-color: white;
+}
+
+.blog-section .blog-nav-section #logo{
+    font-weight:900;
+    text-decoration: none;
+    font-size:1.5rem;
+}
+
+.blog-section .blog-nav-section .search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+    width:30%;
+}
+
+.blog-section .blog-nav-section .search-section input{
+    padding:0.5rem;
+    width:80%;
+    outline:none;
+}
+
+.blog-section .blog-nav-section .search-section button{
+    padding:0.5rem;
+    background-color: #5352ed;
+    border:none;
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.create , .yourblogs , #menu{
+    padding:0.4rem 0.7rem;
+    background-color: #5352ed;
+    color:white;
+    text-decoration: none;
+    font-weight:500;
+    border:none;
+    font-size:0.9rem;
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+}
+
+.blog-section form{
+    margin-top:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:1.5rem;
+    z-index:1000;
+    width:45%;
+}
+
+.blog-section form h1{
+    font-weight:800;
+}
+
+.blog-section form input , .blog-section form textarea{
+    width:80%;
+    padding:0.6rem;
+}
+
+.blog-section form button{
+    padding:0.6rem;
+    background-color: #5352ed;
+    color:white;
+    font-weight: 600;
+    border:none;
+    cursor:pointer;
+}
+
+.show-blogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:5rem;
+    flex-direction: column;
+    gap:2rem;
+    padding:2rem;
+}
+
+.show-blogs .blog-box{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:100%;
+    padding:1.3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    gap:0.6rem;
+}
+
+.first_section h2{
+    font-weight:800;
+}
+.first_section p{
+    font-weight:800;
+    color:#5352ed;
+}
+
+.last_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.last_section .like-dislike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+.last_section .like-dislike .like , 
+.last_section .like-dislike .dislike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+}
+
+#dateSection{
+    color:blue;
+}
+
+.like.visible , .dislike.visible{
+    background-color: lightgreen;
+}
+
+@media (max-width:450px){
+    .blog-section .blog-nav-section.visible{
+        flex-direction: column;
+        gap:1.2rem;
+    }
+    .blog-section .blog-nav-section .search-section , .create , .yourblogs{
+        display:none;
+    }
+    .blog-section .blog-nav-section .search-section{
+        width:100%;
+    }
+    .blog-section .blog-nav-section .search-section.visible , .create.visible , .yourblogs.visible{
+        display: flex;
+    }
+    #menu{
+        display: block;
+    }
+    .last_section{
+        justify-content: baseline;
+    }
+    .last_section .like-dislike{
+        gap:0.3rem;
+    }
+    .blog-section form{
+        margin-top:19rem;
+        width:100%;
+    }
+}

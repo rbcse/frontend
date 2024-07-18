@@ -1,0 +1,185 @@
+.course-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course-section .course-nav-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.2rem;
+    position: fixed;
+    top: 0;
+}
+
+.course-section .course-nav-section .logo-section a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.course-section .course-nav-section .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    width: 60%;
+}
+
+.course-section .course-nav-section .search-section input {
+    width: 60%;
+    border:2px solid rgb(200, 198, 198);
+}
+
+.course-section .course-nav-section .rating-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+}
+
+.course-section .course-nav-section .search-section input,
+.course-section .course-nav-section .search-section button , .course-section .course-nav-section .rating-section button {
+    padding: 0.6rem;
+    outline: none;
+}
+
+.course-section .course-nav-section .search-section button , .course-section .course-nav-section .rating-section button {
+    background-color: #5352ed;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.course-section .course-nav-section .rating-section select {
+    padding: 0.6rem 1rem 0.6rem 0.6rem;
+    background-color: #fff;
+    border: 2px solid rgb(184, 179, 179);
+    color: black;
+    outline: none;
+}
+
+#see-filters {
+    padding: 0.6rem;
+    background-color: #5352ed;
+    color: white;
+    border: none;
+    display: none;
+}
+
+.show-courses-section{
+    margin-top:10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    width:100%;
+}
+
+.course-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    width:80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:1.2rem 0;
+    border-radius: 10px;
+}
+
+.course-card .img-section{
+    width:40%;
+}
+.course-card .img-section img{
+    width:100%;
+    height:20rem;
+    border-radius: 10px;
+}
+
+.course-card .text-section{
+    width:50%;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    gap:1.3rem;
+}
+
+.course-card .text-section h2{
+    font-weight:900;
+}
+.course-card .text-section p{
+    font-weight:600;
+}
+
+.course-card .text-section button{
+    padding:0.8rem;
+    background-color: #5352ed;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart .cart-count{
+    position: absolute;
+    background-color: #5352ed;
+    color:#fff;
+    text-decoration: none;
+    top:0.34rem;
+    right:2.8rem;
+    padding:0 0.3rem;
+    border-radius:40%;
+}
+
+@media (max-width: 450px) {
+
+    .course-nav-section.visible{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .course-section .course-nav-section .search-section,
+    .course-section .course-nav-section .rating-section {
+        display: none;
+    }
+    #see-filters {
+        display: block;
+    }
+    .course-section .course-nav-section .search-section.visible,
+    .course-section .course-nav-section .rating-section.visible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width:100%;
+    }
+
+    .course-card{
+        flex-direction: column;
+        padding:0.9rem;
+    }
+    .course-card .img-section , .course-card .text-section{
+        width:100%;
+    }
+
+    .cart .cart-count{
+        right:1.7rem;
+    }
+}

@@ -1,0 +1,146 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-big-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1.5rem;
+    width:100%;
+    padding:1.5rem;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.cart-container h1{
+    font-size:2.4rem;
+    font-weight:900;
+}
+
+.cart-container .cart-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:90%;
+    border-radius:10px;
+    padding:1rem 0;
+}
+
+.cart-container .cart-course .img-section{
+    width:20%;
+}
+.cart-container .cart-course .img-section img{
+    width:100%;
+    height:10rem;   
+}
+.cart-container .cart-course .text-section{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.cart-container .cart-course .text-section h2{
+    font-weight:900;
+}
+.cart-container .cart-course .text-section p{
+    font-weight:600;
+}
+
+.cart-container .cart-course .text-section .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container .cart-course .text-section .box button{
+    background-color: #5352ed;
+    color:white;
+    padding:0.6rem;
+    border:none;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.checkout-section{
+    width:30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    right:3rem;
+    padding:1.3rem;
+    border-radius:10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    gap:1.2rem;
+    top:5rem;
+}
+
+.checkout-section .discount , .checkout-section .delivery_section , .checkout-section .total_amount{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.checkout-section .border{
+    width:100%;
+    border-top:2px solid #000;
+}
+
+.checkout-section h1{
+    font-weight:900;
+    font-size:1.8rem;
+}
+
+.checkout-section .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+.checkout-section .btns button , .checkout-section .btns a{
+    background-color: #5352ed;
+    color:white;
+    padding:0.6rem;
+    text-decoration: none;
+    border:none;
+    cursor:pointer;
+    font-size:0.9rem;
+}
+
+@media (max-width:450px){
+    .cart-big-container , .cart-container .cart-course{
+        flex-direction: column;
+        width:100%;
+    }
+    .cart-big-container .cart-container{
+        width:100%;
+    }
+
+    .cart-container .cart-course{
+        padding:1rem;
+    }
+
+    .checkout-section{
+        position: relative;
+        width:100%;
+        left:0.5rem;
+    }
+    .cart-container .cart-course .img-section , .cart-container .cart-course .text-section{
+        width:100%;
+    }
+}

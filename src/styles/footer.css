@@ -1,0 +1,36 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-top:3rem;
+    background-color: #5352ed;
+    color:white;
+    width:100%;
+    padding: 2rem;
+}
+
+footer h1{
+    font-weight: 800;
+}
+
+footer span{
+    color:black;
+}
+
+footer .footer-icons , footer .social-media{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+}
+
+footer .footer-icons a{
+    color:white;
+    text-decoration: none;
+}
+
+footer .social-media i{
+    font-size:1.5rem;
+}

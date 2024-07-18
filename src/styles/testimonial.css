@@ -1,0 +1,82 @@
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    gap:2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonials h1{
+    font-weight:800;
+    font-size:2.5rem;
+}
+
+.testimonials .outer-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.4rem;
+}
+
+.testimonials .outer-section i{
+    font-size:1.8rem;
+}
+
+.test-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap:2rem;
+    overflow:hidden;
+}
+
+.test-card{
+    display:none;
+}
+
+.test-card.visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:20%;
+    background-color: #5352ed;
+    padding:1rem 1.2rem;
+    border-radius:4px;
+    height:29rem;
+    gap:2rem;
+}
+
+.test-card p{
+    color:white;
+    margin:1rem 0;
+}
+
+.test-card img{
+    width:100%;
+    height:15rem;
+    border-top-left-radius: 105px;
+    border-bottom-right-radius: 105px;
+}
+
+.test-card button{
+    border:none;
+    background-color: white;
+    padding:0.6rem;
+    border-radius:5px;
+    font-size:1.1rem;
+    cursor:pointer;
+    font-weight:600;
+}
+
+@media (max-width:450px){
+    .test-card.visible{
+        width:100%;
+    }
+    .outer-section{
+        gap:1rem;
+    }
+}

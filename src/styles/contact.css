@@ -1,0 +1,76 @@
+.contact-section{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem;
+    width:100%;
+}
+
+.contact-section .image-section{
+    width:45%;
+    text-align: center;
+}
+.contact-section .image-section img{
+    width:70%;
+}
+
+.contact-section form h1{
+    font-weight:800;
+}
+
+.contact-section form{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    width:50%;
+    gap:2rem;
+}
+
+.contact-section form input{
+    width:60%;
+    background-color: #dfe6e9;
+    padding:1rem;
+    border:none;
+    outline: none;
+    border-radius:5px;
+    font-size:1.1rem;
+}
+
+.contact-section form textarea{
+    width:60%;
+    background-color: #dfe6e9;
+    border:none;
+    outline: none;
+    border-radius:5px;
+    font-size:1.1rem;
+    padding:1.1rem;
+    padding-bottom: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-section form button{
+    width:60%;
+    padding:0.6rem;
+    cursor:pointer;
+    background-color: #5352ed;
+    border:none;
+    color:white;
+    font-size:1.1rem;
+}
+
+@media (max-width:450px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-section .image-section , .contact-section form{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-section form input , .contact-section form textarea , .contact-section form button{
+        width:90%;
+    }
+}
